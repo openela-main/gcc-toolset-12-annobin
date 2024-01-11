@@ -1,0 +1,11 @@
+--- annobin.orig/gcc-plugin/annobin.cc	2022-06-15 11:55:16.777078303 +0100
++++ annobin-10.76/gcc-plugin/annobin.cc	2022-06-15 11:55:47.044923662 +0100
+@@ -105,7 +105,7 @@ static uint           annobin_active_che
+ 
+ /* Default to using section groups as the link-order
+    method needs a linker from binutils 2.36 or later.  */
+-attach_type annobin_attach_type = not_set;
++attach_type annobin_attach_type = group;
+ 
+ static const char *   annobin_section_type = "%note";
+ 
